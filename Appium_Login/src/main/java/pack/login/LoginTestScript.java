@@ -56,14 +56,21 @@ public class LoginTestScript {
 	    public void registration1() throws Exception {
 	        try{
 	        
+	        	Thread.sleep(1000);
+	        	
 	        	//Username
-	        	driver_and.findElement(By.xpath("//android.widget.EditText[@resource-id='loginapp.android.javacodegeeks.com.loginapp:id/usernameET']")).click();
+	        	//driver_and.findElement(By.xpath("//android.widget.EditText[@resource-id='loginapp.android.javacodegeeks.com.loginapp:id/usernameET']")).click();
 	        	driver_and.findElement(By.xpath("//android.widget.EditText[@resource-id='loginapp.android.javacodegeeks.com.loginapp:id/usernameET']")).sendKeys("admin1");
 	        	
+	        	Thread.sleep(1000);
 	        	//Password
 	        	driver_and.findElement(By.xpath("//android.widget.EditText[@resource-id='loginapp.android.javacodegeeks.com.loginapp:id/passwordET']")).click();
 	        	driver_and.findElement(By.xpath("//android.widget.EditText[@resource-id='loginapp.android.javacodegeeks.com.loginapp:id/passwordET']")).sendKeys("admin");
 	        	
+	        	
+	        	driver_and.navigate().back();
+	        	
+	        	Thread.sleep(1000);
 	        	
 	        	//Login
 	        	driver_and.findElement(By.xpath("//android.widget.Button[@resource-id='loginapp.android.javacodegeeks.com.loginapp:id/loginBtn']")).click();
