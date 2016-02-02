@@ -43,7 +43,7 @@ public class LoginTestScript {
   	
   		driver_and.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
            
-           System.out.println("The Current Local Device capabilities are: \n" + driver_and.getCapabilities().asMap());
+           System.out.println("The Current Local Device capabilities are1: \n" + driver_and.getCapabilities().asMap());
            Thread.sleep(6000);
 		 }catch(Exception e)
 		 {
